@@ -81,7 +81,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Removing cm proprietary nfc config files
+#$(call inherit-product, vendor/td/config/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
